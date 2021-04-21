@@ -127,7 +127,7 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 
 #### 配置控制台访问令牌
 
-对于Mac环境
+对于Mac环境,终端粘贴拿到TOKEN
 
 ```shell
 TOKEN=$(kubectl -n kube-system describe secret default| awk '$1=="token:"{print $2}')
